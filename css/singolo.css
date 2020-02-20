@@ -1,0 +1,185 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* SITE STYLE */
+body {background: #fff; font-family: 'PT Sans', sans-serif; font-size: 14px; color: #666d89;}
+
+.not-for-select {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;}
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+body > section {padding-top: 66px; padding-bottom: 66px;}
+
+input, textarea {outline: none;}
+input[type="text"], input[type="seclect"], input[type="button"], textarea {width: 100%; box-sizing:border-box !important; -moz-box-sizing:border-box !important; -webkit-box-sizing:border-box !important; margin-bottom: 15px; border: none; border-radius: 5px; background: #ca4549; padding: 14px; font-family: 'Roboto', sans-serif; font-size: 0.850em; font-weight: bold; color: #f48c8f; transition: background 0.25s 0.05s ease}
+textarea {resize: vertical;}
+input[type="text"]:focus, input[type="seclect"]:focus, textarea:focus {background: #C0494D;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #f48c8f;}
+input:-moz-placeholder, textarea:-moz-placeholder {color: #f48c8f;}
+
+.inner {width: 1020px; max-width: 95%; margin: 0 auto; overflow: hidden;}
+header, footer {height: 90px; background: #303441;}
+header, .folio {box-shadow: inset 0 -7px 0 #373b4a;}
+.slider, .contact {background: #eb5055; box-shadow: inset 0 -7px 0 #ea676b;}
+
+header .logo {float: left; font: 25px 'Lato', sans-serif; color: #fff; font-weight: 900; line-height: 83px; text-transform: uppercase;}
+header .logo:after {content: '*';color: #eb5055;}
+
+header nav .menu {float: right; color: #fff; font-weight: bold; text-transform: uppercase; line-height: 83px;}
+header nav .menu li {float: left;}
+header nav .menu li:after {content: '\00b7'; margin: 0 15px; font-size: 13pt; color: #3e4354;}
+header nav .menu li:last-child:after  {content: ''; margin: 0;}
+header nav .menu a {color: #fff; text-decoration: none; transition: all 0.25s 0.05s linear}
+header nav .menu a:active, nav .menu a:hover {color: #eb5055;}
+header nav .menu a:hover {border-bottom: 1px solid #eb5055;}
+
+.header {font-size: 30px; font-weight: bold; line-height: 25px;}
+.subtext {margin: 35px 0; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 300; line-height: 25px;}
+.title {display: block; margin-bottom: 10px; font-size: 1.55em; font-weight: bold;}
+
+.services {background: #f2f2f2;}
+.services .serv {float: left; width: 31.8%; margin: 0 15px 40px 0;}
+.services .serv i {float: left; display: block; margin: 0 15px 0 0; width: 59px; height: 85px;}
+
+.services .serv i.pen {background: url('../img/pen.png') no-repeat 50% 50%;}
+.services .serv i.bulb {background: url('../img/bulb.png') no-repeat 50% 50%;}
+.services .serv i.heart {background: url('../img/heart.png') no-repeat 50% 50%;}
+.services .serv i.phone {background: url('../img/phone.png') no-repeat 50% 50%;}
+.services .serv i.bubble {background: url('../img/bubble.png') no-repeat 50% 50%;}
+.services .serv i.star {background: url('../img/star.png') no-repeat 50% 50%;}
+
+.folio {background: #303441;}
+.folio .subtext {margin-bottom: 15px;}
+.folio .filter {margin-bottom: 15px; overflow: hidden; font-weight: 600;}
+.folio .filters .filter a {float: left; margin-right: 15px; padding: 3px 5px; font-size: 12px; color: #666d89; text-decoration: none; border: 1px solid #666d89; border-radius: 5px;}
+.folio .filters .filter a.active {color: #fff; border-color: #fff;}
+
+.folio .container {position: relative; margin: 0 auto;}
+.folio .container li {float: left; position: relative; width: 22.9%; height: 180px; margin: 0 20px 20px 0; overflow: hidden;}
+.folio .container li .layer {}
+.folio .container li .layer img {position: absolute; display: block; width: 107.4%;}
+
+.zoomOverlay {position:absolute; top:0; left:0; bottom:0; right:0; display:none; background-image:url(../img/zoom.png); background-repeat: no-repeat; background-position: center;}
+
+.about {background: #f2f2f2; box-shadow: inset 0 -7px 0 #fff;}
+.about .face {float: left; margin-right: 47px; width: 300px;}
+.about .face:last-child {margin-right: 0;}
+.about .face .title {margin: 15px 0;}
+.about .face i {display: block; width: 300px; height: 300px;}
+.about .face i.left {background: url('../img/faces.png') no-repeat left;}
+.about .face i.center {background: url('../img/faces.png') no-repeat center;}
+.about .face i.right {background: url('../img/faces.png') no-repeat right;}
+.about .face .social {display: block; margin: 20px 0; overflow: hidden; width: 152px;}
+.about .face .social a {float: left; margin-right: 8px; display: block; width: 32px; height: 32px; transition: all 0.15s 0.15s linear}
+.about .face .social a:last-child {margin: 0;}
+.about .face .social:hover a:not(:hover) {opacity: 0.4;}
+.about .face .social a.facebook {background: url('../img/social-buttons.png') no-repeat;}
+.about .face .social a.google {background: url('../img/social-buttons.png') -40px 0 no-repeat;}
+.about .face .social a.twitter {background: url('../img/social-buttons.png') -80px 0 no-repeat;}
+.about .face .social a.linkedin {background: url('../img/social-buttons.png') -120px 0 no-repeat;}
+
+.contact {color: #f0d8d9;}
+.contact .inputs {float: left; width: 50%; margin-right: 20px;}
+
+.contact .cntc {margin-top: 20px;}
+.contact .cntc .lcl {margin: 0 0 5px; line-height: 8px;}
+.contact .cntc .lcl i {display: inline-block; margin-right: 15px; width: 15px; height: 15px;}
+.contact .cntc .lcl .text {position: relative; bottom: 5px; font-size: 0.950em;}
+.contact .cntc .lcl i.location {background: url('../img/contact-icons.png') top no-repeat;}
+.contact .cntc .lcl i.phone {background: url('../img/contact-icons.png') center no-repeat;}
+.contact .cntc .lcl i.phone + .text {bottom: 3px;}
+.contact .cntc .lcl i.mail {background: url('../img/contact-icons.png') bottom no-repeat;}
+.contact .cntc .lcl i.mail + .text {bottom: 0;}
+
+footer {line-height: 90px;}
+footer .social {float: right; display: block; margin: 32px 0 0; overflow: hidden; width: 152px;}
+footer .social a {float: left; margin-right: 8px; display: block; width: 32px; height: 32px; transition: all 0.15s 0.15s linear}
+footer .social a:last-child {margin: 0;}
+footer .social:hover a:not(:hover) {opacity: 0.4;}
+footer .social a.facebook {background: url('../img/social-buttons.png') no-repeat;}
+footer .social a.google {background: url('../img/social-buttons.png') -40px 0 no-repeat;}
+footer .social a.twitter {background: url('../img/social-buttons.png') -80px 0 no-repeat;}
+footer .social a.linkedin {background: url('../img/social-buttons.png') -120px 0 no-repeat;}
+
+@media only screen and (min-width: 239px) and (max-width: 480px) {
+	header, footer {height: auto;}
+	header .logo, header nav .menu, header nav .menu li, footer, footer .social {float: none; text-align: center; margin: 0 auto;}
+	footer .social {margin-bottom: 35px;}
+	header nav .menu li:after {margin: 0; content: '';}
+	.slider .flexslider {padding: 0 50px;}
+	.services .serv {width: 100%; margin-right: 0;}
+	.folio .filter {display: table; margin: 0 auto 15px;}
+	.folio .filter a {margin-bottom: 5px;}
+	.folio .container li {float: none; width: 100%; margin-right: 0;}
+	.about .face {float: none; margin: 20px 0 0;}
+	.contact .inputs {float: none; width: 100%; margin: 0 0 20px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+	.services .serv {width: 45.1%;}
+	.about .face {float: none; margin: 40px auto 0;}
+	.about .face:last-child {margin: 40px auto 0;}
+}
+@media only screen and (min-width: 640px) and (max-width: 992px) {
+	.services .serv {width: 43.1%;}
+	.folio .container li {width: 46%;}
+	.folio .container li:nth-child(even) {margin-right: 0;}
+}
+@media only screen and (min-width: 750px) and (max-width: 992px) {
+	.services .serv {width: 47.8%;}
+	.folio .filter {display: table; margin: 0 auto 15px;}
+	.folio .container {margin: 0 40px;}
+	.folio .container li {width: 47%;}
+	.folio .container li:nth-child(even) {margin-right: 0;}
+}
+
+@media only screen and (min-width: 790px) and (max-width: 992px) {
+	.services .serv {width: 47.9%;}
+	.folio .container li {width: 47.3%;}
+	.folio .container li:nth-child(even) {margin-right: 0;}
+}
+@media only screen and (min-width: 1000px) and (max-width: 1365px) {
+	.services .serv {width: 31.7%;}
+	.folio .container li {width: 31.2%;}
+	.folio .container li:nth-child(3n) {margin-right: 0;}
+	.about .face {margin-right: 24px;}
+}
+@media only screen and (min-width: 1382px) {}
